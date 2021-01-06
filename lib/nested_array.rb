@@ -31,7 +31,7 @@ def sorted_matrix
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
   sorted_arr1 = CONVENTIONAL_PRODUCE.sort
-  sorted_arr2 = ORGANIC_PRODUCE.sort!
+  sorted_arr2 = ORGANIC_PRODUCE.sort
   arr = [sorted_arr1, sorted_arr2]
   arr
 end
@@ -39,8 +39,7 @@ end
 def matrix_lookup(matrix, row, column)
   # Given any matrix (array of arrays), a row index and a column index, 
   # Return the matrix's content at that row and and column
-  val = matrix[row][column]
-  val
+  matrix[row][column]
 end
 
 def matrix_update(matrix, row, column, new_value)
